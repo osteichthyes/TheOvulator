@@ -1,2 +1,7 @@
-#### Throw this in unpriviliged user crontab. Runs daily at 1am.
-0 1 * * *   /usr/local/bin/timer.sh
+## Throw this in unpriviliged user crontab. Runs daily at 3:20am.
+## This should avoid DST changes, which occur from 2-3am
+## Crontabs lacking empty lines at the bottom are ignored, be sure
+## they are included.
+20 3 * * *   /usr/local/bin/timer.sh
+
+
