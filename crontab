@@ -1,0 +1,2 @@
+#### Throw this in unpriviliged user crontab. Runs daily at 1am.
+0 1 * * *   /usr/local/bin/timer.sh
