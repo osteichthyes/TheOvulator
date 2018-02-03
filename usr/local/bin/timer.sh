@@ -4,9 +4,9 @@
 ## | date | sunrise | sunset | 
 ## Then just grep to today's date, and get the sunrise, then at SUNRISE run the python
 
-##SUNRISE=($date +%H:%m)
-## something like that format, but from this table.
-
+DATE=$(date +%m-%d)
+SUNRISE=$(cat /path/to/table/file | /bin/grep $DATE | awk -F\| '{print $1}')
 at -f /usr/local/bin/controlservo.sh $SUNRISE
+
 exit 0
 
