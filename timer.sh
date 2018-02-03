@@ -7,6 +7,6 @@
 ##SUNRISE=($date +%H:%m)
 ## something like that format, but from this table.
 
-at $SUNRISE -f /usr/local/bin/runservo.sh
+at $SUNRISE -f /usr/local/bin/controlservo.sh
 exit 0
 
