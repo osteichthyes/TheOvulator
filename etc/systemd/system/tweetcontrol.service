@@ -5,6 +5,7 @@ After = network.service
 [Service]
 ExecStart = /usr/local/bin/tweetcontrol.sh
 User = ovulator
+Group = ovulator
 
 [Install]
 WantedBy = mult-iuser.target
