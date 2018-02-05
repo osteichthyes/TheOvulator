@@ -1,8 +1,10 @@
 [Unit]
 Description = Check twitter for commands
+After = network.service
 
 [Service]
 ExecStart = /usr/local/bin/tweetcontrol.sh
+User = ovulator
 
 [Install]
 WantedBy = mult-iuser.target
