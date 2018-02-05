@@ -9,11 +9,11 @@
 The code is intended to be loaded on a Raspberry Pi. It uses standard Unix-like file structure. All executable files reside in the local bin, not the bin.
 
 ## Requirements
-*Raspberry Pi (or other SBC with a few open GPIO pins and a PWM pin)
-*Python 3+
-*Twidge twitter client
-*Python time, RPI.PIO
-*WiFi or other network connection for NTP and tweeting
+* Raspberry Pi (or other SBC with a few open GPIO pins and a PWM pin)
+* Python 3
+* Twidge twitter client
+* Python time, RPI.PIO
+* WiFi or other network connection for NTP and tweeting
 
 ## Circuit
 The servo mentioned in the python script is intended to be turned on with an NPN transistor on the ground of the servo, such that when the Raspberry Pi pulls the pin high, the transistor saturates and the servo is powered. Servos have some nascent draw, this is intended to save power as we are trying to run this using solar.
