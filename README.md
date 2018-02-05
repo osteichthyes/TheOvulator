@@ -6,7 +6,7 @@
 4. Twitter command. Direct messaging "OVULATE" at the account of the Ovulator will cause the door to open. The Ovulator checks every five minutes, so it will open within five minutes.
 
 ## Code
-The code is intended to be loaded on a Raspberry Pi. It uses standard Unix-like file structure. All executable files reside in the local bin, not the bin.
+The code is intended to be loaded on a Raspberry Pi. It uses standard Unix-like file structure. All executable files reside in the local bin, not the bin. I'm assuming raspbian, but it should work more or less as-is on any distro. Exact file names may obviously differ.
 
 ## Requirements
 * Raspberry Pi (or other SBC with a few open GPIO pins and a PWM pin)
