@@ -1,0 +1,8 @@
+[Unit]
+Description = Check twitter for commands
+
+[Service]
+ExecStart = /usr/local/bin/tweetcontrol.sh
+
+[Install]
+WantedBy = mult-iuser.target
