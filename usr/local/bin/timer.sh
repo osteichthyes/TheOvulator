@@ -5,9 +5,10 @@
 ## This is standard csv syntax
 ## Then just grep to today's date, and get the sunrise, then at SUNRISE run the python
 
-DATE=$(date +%m)
-SUNRISE=$(cat /usr/local/share/sunriseset.txt | /bin/grep $DATE | awk -F "\"*,\"*" '{print $2}')
-at -f /usr/local/bin/controlservo.sh $SUNRISE
+curMonth=$(date +%m)
+Sunrise_UTC=$(cat /usr/local/share/sunriseset.txt | /bin/grep $curMonth | awk -F "\"*,\"*" '{print $2}')
+Sunrise_Local=$(date -d "03:23 PM UTC" +"%I:%M %p")
+at -f /usr/local/bin/controlservo.sh $Sunrise_Local
 
 exit 0
 
