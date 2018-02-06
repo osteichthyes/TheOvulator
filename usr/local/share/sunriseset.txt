@@ -1,6 +1,16 @@
-"01", "07:20 AM", "05:15 PM"
-"02", "7:00 AM", "05:40 PM"
-"03", 
+## SHOULD BE IN UTC CUZ DST IS STUPID
+## Date is used in timer.sh to convert to localtime
+## Source: http://aa.usno.navy.mil/cgi-bin/aa_rstablew.pl?ID=AA&year=2018&task=0&place=&lon_sign=-1&lon_deg=121&lon_min=43&lat_sign=1&lat_deg=38&lat_min=37&tz=0&tz_sign=-1
 
-#### THIS SHOULD BE IN UTC CUZ DST IS STUPID, BUT AT DOES NOT RECOGNIZE ANY TIMEZONE BUT LOCALTIME.
-#### CONVERT IN TIMER.SH
+"01","1520","0010"
+"02","1455","0145"
+"03","1420","0215"
+"04","1335","0245"
+"05","1300","0310"
+"06","1245","0330"
+"07","1255","0330"
+"08","1325","0300"
+"09","1350","0215"
+"10","1415","0130"
+"11","1450","0100"
+"12","1515","0050"
