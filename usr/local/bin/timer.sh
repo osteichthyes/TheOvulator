@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ## This will work a bit unusually -- essentially, if there exists a table with
-## | date | sunrise | sunset | 
+## "date", "sunrise", "sunset"
+## This is standard csv syntax
 ## Then just grep to today's date, and get the sunrise, then at SUNRISE run the python
 
 DATE=$(date +%m)
