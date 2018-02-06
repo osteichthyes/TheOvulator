@@ -7,7 +7,7 @@
 
 curMonth=$(date +%m)
 Sunrise_UTC=$(cat /usr/local/share/sunriseset.txt | /bin/grep $curMonth | awk -F "\"*,\"*" '{print $2}')
-Sunrise_Local=$(date -d $Sunrise_UTC UTC +"%I:%M %p")
+Sunrise_Local=$(date -d "$Sunrise_UTC UTC" +"%I:%M %p")
 at -f /usr/local/bin/controlservo.sh $Sunrise_Local
 
 exit 0
