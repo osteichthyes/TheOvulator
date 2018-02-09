@@ -5,6 +5,7 @@
 ## servo script.
 
 /bin/python3 /usr/local/bin/servo.py
-
+MESSAGE="OVULATION! $twUser"
+/bin/twidge -c $HOME/.twidgerc update $MESSAGE
 
 exit 0
