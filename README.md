@@ -1,4 +1,7 @@
 # TheOvulator - A connected Chicken Coop
+
+---
+
 ## Features
 1. **Door opening daily at a pre-set time:**  This time is currently defined monthly, but could easily be set using week number or day of month date. This would allow for finer-scale changes to sunrise. As it stands, it's about mean monthly sunrise, rounded to the nearest five minutes for north-central CA.
 2. **Egg-laying detection:**  Using a thermocouple, the Ovulator detects when eggs are laid (it gets warmer in the nest-box) *This feature has not yet been implemented*
