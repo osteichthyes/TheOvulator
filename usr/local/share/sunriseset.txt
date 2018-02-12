@@ -2,9 +2,10 @@
 ## Date is used in timer.sh to convert to localtime
 ## Source: http://aa.usno.navy.mil/cgi-bin/aa_rstablew.pl?ID=AA&year=2018&task=0&place=&lon_sign=-1&lon_deg=121&lon_min=43&lat_sign=1&lat_deg=38&lat_min=37&tz=0&tz_sign=-1
 ##
-## This could easily be done in a script that pulls the data twice per year from the above site using wget and then awking the appropriate column
-## then grepping to the date --  but ya know, what's the point? of all that? You could also have a variable somewhere in 
-## /etc that defines the lat and long and really generalize it, but further -- what's the point?
+## This could easily be done in a script that pulls the data twice per year from the above site using wget and then 
+## awking the appropriate column then grepping to the date --  but ya know, what's the point? of all that? You could 
+## also have a variable somewhere in /etc that defines the lat and long and really generalize it, but further -- 
+## what's the point?
 
 "01","1520","0010"
 "02","1455","0145"
