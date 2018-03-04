@@ -4,10 +4,10 @@
 
 ## Features
 1. **Door opening daily at a pre-set time:**  This time is currently defined monthly, but could easily be set using week number or day of month date. This would allow for finer-scale changes to sunrise. As it stands, it's about mean monthly sunrise, rounded to the nearest five minutes for north-central CA.
-2. **Egg-laying detection:**  Using a thermocouple, the Ovulator detects when eggs are laid (it gets warmer in the nest-box) *This feature has not yet been implemented*
-3. **Twitter updates:**  The Ovulator will tweet "OVULATION!" at you whenever the door opens, and "You've got eggs" at you any time an egg-laying is detected.
-4. **Twitter commands:**  Direct messaging "OVULATE" at the account of the Ovulator will cause the door to open. The Ovulator checks every five minutes, so it will open within five minutes. The command only works if it originates from a preset Twitter handle, which is set as a user environment variable. *More commands to come in later versions*
-
+2. **Door opening verification** Any time the door is opened, either via the timer above (1) or the Twitter command below (5), the opening will be verified using a magnetic door switch. If the door fails to open, it will tweet "MY DOOR IS STUCK" at you. *This feature has not yet been implemented*
+3. **Egg-laying detection:**  Using a thermocouple, the Ovulator detects when eggs are laid (it gets warmer in the nest-box) *This feature has not yet been implemented*
+4. **Twitter updates:**  The Ovulator will tweet "OVULATION!" at you whenever the door opens, and "You've got eggs" at you any time an egg-laying is detected.
+5. **Twitter commands:**  Direct messaging "OVULATE" at the account of the Ovulator will cause the door to open. The Ovulator checks every five minutes, so it will open within five minutes. The command only works if it originates from a preset Twitter handle, which is set as a user environment variable. *More commands to come in later versions*
 ---
 
 ## Code
